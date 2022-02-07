@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="transfer-letter" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="22634fb4-2040-4bef-83db-f5541dfc3716">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="pin" class="java.lang.String"/>
+	<parameter name="tiaaContractNo" class="java.lang.String"/>
+	<parameter name="crefContractNo" class="java.lang.String"/>
+	<parameter name="firstAnnuitant" class="java.lang.String"/>
+	<parameter name="secondAnnuitant" class="java.lang.String"/>
+	<parameter name="beneficiary" class="java.lang.String"/>
+	<parameter name="incomeStartDate" class="java.lang.String"/>
+	<parameter name="paymentFrequency" class="java.lang.String"/>
+	<parameter name="tiaaGrossSettlementAmount" class="java.lang.String"/>
+	<parameter name="crefGrossSettlementAmount" class="java.lang.String"/>
+	<parameter name="saGrossSettlementAmount" class="java.lang.String"/>
+	<parameter name="name" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="135" width="25" height="30" uuid="e18488c9-9ea1-41cf-a4fe-d529401a7bb1">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Dear]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="25" y="135" width="210" height="16" uuid="3850b671-82a0-4b18-8cf3-9eb85f4fd333">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="168" width="550" height="30" uuid="36aeaadf-98d0-4bde-b13d-7314d76521ec"/>
+				<text><![CDATA[Congratulations on beginning your annuity income. We’re pleased to provide your contract(s), which outline all of the provisions of your annuity. Below, you'll find a summary of your payment arrangements:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="215" width="180" height="16" uuid="00fa2447-0736-41cd-a1ac-239281dfd218">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Personal Identification Number (PIN):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="259" width="180" height="16" uuid="489043e6-2302-4771-ae3d-e1e5adb2cef2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contract Number(s)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="345" width="100" height="16" uuid="574ae771-668f-48e7-b320-78f54b3365f2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[First Annuitant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="364" width="100" height="16" uuid="846ccac9-2c43-49c5-89d8-79968ffee38f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Second Annuitant:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="281" y="215" width="269" height="16" uuid="5241927c-fd9e-4a4b-9b09-91563300213f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{pin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="275" width="270" height="16" uuid="fdfcec33-07c5-4659-bbff-03c67cc94d2e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{tiaaContractNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="275" width="100" height="16" uuid="0de852c9-6ac5-445a-aaeb-1853ac8a99a1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[TIAA Traditional:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="295" width="100" height="16" uuid="5464746a-c6a9-4a31-9f9b-c6f03d86b4ce">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[CREF:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="295" width="270" height="16" uuid="188fddc0-0f85-4d87-ace0-e4334df16a9d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{crefContractNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="345" width="271" height="16" uuid="2e9f359b-1082-4f28-b5f2-51866b1ac590">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{firstAnnuitant}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="364" width="272" height="16" uuid="7e42ea2f-772b-4ab3-bb62-31f0438c3b4c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{secondAnnuitant}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="382" width="100" height="16" uuid="8356d531-c611-4e9f-a686-fa9e337c1e8e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Beneficiary:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="382" width="272" height="16" uuid="11b33d34-0cfd-4d67-846b-92f21078b38b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{beneficiary}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="439" width="100" height="16" uuid="eb216802-d028-47d8-ad2b-4fcceaef2f09">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Income Start Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="456" width="100" height="16" uuid="aa336481-eeed-460b-a67e-c14137a95282">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment Frequency:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="512" width="140" height="16" uuid="27cd0255-384e-4b36-a5c7-336bbf23ef5f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gross Settlement Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="530" width="140" height="16" uuid="ebce1073-118f-4408-967e-d9cf13c0dcb1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[TIAA Traditional:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="548" width="140" height="16" uuid="221fd875-91c9-4645-a6b0-984b07f76c6a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[CREF:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="567" width="140" height="16" uuid="78a5f34a-7f97-4c52-8ba9-1f6a7763594a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[TIAA Separate Account:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="628" width="140" height="16" uuid="836a2324-0398-4d0e-b886-7a9eefdfb45d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Additional Income:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="648" width="550" height="34" uuid="3f63bea6-3b63-4cba-ba12-a20f1bc68528"/>
+				<text><![CDATA[If premiums are added to your contract up to seventy days after your annuity start date, those premiums plus earnings will be used to purchase additional income. We will send you a confirmation of the new income amount.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="12" width="190" height="55" uuid="2eaba9c1-d7e0-4cb1-bdd4-d98478832f6d"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[MIT
+P.O. Box 1256
+Charlotte, NC 28888-1289]]></text>
+			</staticText>
+			<image>
+				<reportElement x="-1" y="0" width="110" height="79" uuid="8fc7caac-a453-48d7-a65c-2089ca25a893"/>
+				<imageExpression><![CDATA["./src/main/resources/images/logo.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="281" y="439" width="272" height="16" uuid="be477c74-b6b7-477c-8583-0bb9cf799421">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{incomeStartDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="456" width="272" height="16" uuid="49c6ed61-b349-4299-bb83-fbd95a0aeb62">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{paymentFrequency}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="530" width="272" height="16" uuid="f1d05ed9-f49b-4d9d-afdb-d9f704957009">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{tiaaGrossSettlementAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="548" width="272" height="16" uuid="e19178bf-b0f5-4df3-b0c3-4ff9a9e86b9e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{crefGrossSettlementAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="567" width="272" height="16" uuid="53d808d1-90d2-49aa-beeb-07224d8b657d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{saGrossSettlementAmount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="390">
+			<staticText>
+				<reportElement x="2" y="171" width="550" height="30" uuid="e37b7e59-fc5f-4e51-b997-f9fd040f6baa"/>
+				<text><![CDATA[If you have any questions, please call us at 800-222-2222 weekdays from 8 a.m. to 10 p.m. (ET). You can also visit MIT.org for more information.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="94" width="550" height="46" uuid="c4349e50-11e0-46d1-9e4a-77d776f4ff1d"/>
+				<text><![CDATA[We understand that you may need some flexibility when you’re receiving annuity income. That’s why we offer several ways for you to revisit some of your initial choices and to make adjustments. To learn more, please read our brochure, How to make changes to your annuity income, online at MIT.org/MakingChanges.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="-2" width="140" height="16" uuid="89ae8134-7c4a-4e45-ad52-450d62323130">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Income Option:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="18" width="550" height="46" uuid="54ad778d-a068-4143-a070-e8b2a749b951"/>
+				<text><![CDATA[One-Life Annuity with a 14-year guaranteed period
+Under this option, you receive income for as long as you live. If you die within the first 14 years of payments, income will
+continue to your beneficiary for rest of the guaranteed period. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="310" width="180" height="16" uuid="72270fc0-880e-4f2f-bc0b-e073d9ae3b64">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[President and Chief Executive Officer]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="250" width="160" height="50" uuid="5644b0bc-be06-47bb-a196-e978eba67cc7"/>
+				<imageExpression><![CDATA["./src/main/resources/images/Signature.png"]]></imageExpression>
+			</image>
+		</band>
+	</summary>
+</jasperReport>
